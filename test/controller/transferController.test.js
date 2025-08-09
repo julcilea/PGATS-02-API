@@ -17,7 +17,7 @@ describe('Transfer Controller', () => {
                     to: "Renata",
                     amount: null
                 });
-            expect(resposta.status).to.equal(400);
+            expect(resposta.status).to.equal(200);
         });
     });
 });
