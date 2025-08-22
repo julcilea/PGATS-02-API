@@ -29,38 +29,6 @@ API Restful para login, registro, consulta de usuários e transferências, com r
 - `GET /api/users` — Listar usuários
 - `POST /api/transfers` — Transferência de valores
 
-## Exemplos de uso
-
-### Registro de usuário
-
-```bash
-curl -X POST http://localhost:3000/api/users/register \
-  -H 'Content-Type: application/json' \
-  -d '{"username":"alice","password":"123","balance":1000,"favorites":["bob"]}'
-```
-
-### Login
-
-```bash
-curl -X POST http://localhost:3000/api/users/login \
-  -H 'Content-Type: application/json' \
-  -d '{"username":"alice","password":"123"}'
-```
-
-### Listar usuários
-
-```bash
-curl http://localhost:3000/api/users
-```
-
-### Transferência
-
-```bash
-curl -X POST http://localhost:3000/api/transfers \
-  -H 'Content-Type: application/json' \
-  -d '{"from":"alice","to":"bob","amount":110}'
-```
-
 ## Regras de Negócio
 
 - Login exige usuário e senha.
