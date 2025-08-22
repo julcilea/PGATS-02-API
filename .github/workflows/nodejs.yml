@@ -33,4 +33,3 @@ jobs:
           npm start &
           sleep 5
           npm run test-external
-          kill $SERVER_PID
