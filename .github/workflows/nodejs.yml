@@ -25,5 +25,12 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
-      - name: Rodar testes
-        run: npm test
+      - name: Rodar testes controller
+        run: npm run test-controller
+
+      - name: Rodar testes external
+        run: |
+          npm start &
+          sleep 5
+          npm run test-external
+          kill $SERVER_PID
