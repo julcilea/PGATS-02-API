@@ -1,4 +1,5 @@
 name: Node.js CI
+
 permissions:
   checks: write
   pull-requests: write
@@ -25,10 +26,10 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
-      - name: Rodar testes controller
+      - name: Rodar testes componentes
         run: npm run test-controller
 
-      - name: Rodar testes external
+      - name: Rodar testes integrados
         run: |
           npm start &
           sleep 5
