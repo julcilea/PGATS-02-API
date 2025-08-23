@@ -34,3 +34,12 @@ jobs:
           npm start &
           sleep 5
           npm run test-external
+
+      - name: Test Reporter
+        uses: dorny/test-reporter@v1
+        if: ${{ !cancelled() }}
+        with:
+          name: Test Report
+          path: ./test-results.xml
+          reporter: java-junit
+          token: ${{ secrets.GITHUB_TOKEN }}    
