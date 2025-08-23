@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.036" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-08-23T01:02:15" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Transfer Controller" timestamp="2025-08-23T01:02:15" tests="0" file="/home/julcilea/Documentos/PGATS/pgast-02-api/test/controller/transferController.test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="POST /api/transfers" timestamp="2025-08-23T01:02:15" tests="2" file="/home/julcilea/Documentos/PGATS/pgast-02-api/test/controller/transferController.test.js" time="0.027" failures="0">
+    <testcase name="Transfer Controller POST /api/transfers Quando informo remetente e destinatario inexistente recebo 400" time="0.021" classname="Quando informo remetente e destinatario inexistente recebo 400">
+    </testcase>
+    <testcase name="Transfer Controller POST /api/transfers Mockando transferService: deve retornar 400 com mensagem do Swagger" time="0.004" classname="Mockando transferService: deve retornar 400 com mensagem do Swagger">
+    </testcase>
+  </testsuite>
+  <testsuite name="Transfer Controller" timestamp="2025-08-23T01:02:15" tests="0" file="/home/julcilea/Documentos/PGATS/pgast-02-api/test/external/transferExternal.test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="POST /api/transfers" timestamp="2025-08-23T01:02:15" tests="1" file="/home/julcilea/Documentos/PGATS/pgast-02-api/test/external/transferExternal.test.js" time="0.008" failures="0">
+    <testcase name="Transfer Controller POST /api/transfers Quando informo remetente e destinatario inexistente recebo 400" time="0.007" classname="Quando informo remetente e destinatario inexistente recebo 400">
+    </testcase>
+  </testsuite>
+</testsuites>
